@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next"; import {projects,services} from "@/lib/data";
+export default function sitemap():MetadataRoute.Sitemap{const base="https://www.nexorainteriors.in";return [{url:base},{url:base+"/about"},{url:base+"/services"},{url:base+"/projects"},{url:base+"/process"},{url:base+"/blog"},{url:base+"/contact"},{url:base+"/consultation"},...services.map(s=>({url:`${base}/services/${s.slug}`})),...projects.map(p=>({url:`${base}/projects/${p.slug}`}))]}

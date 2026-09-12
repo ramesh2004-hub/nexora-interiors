@@ -1,0 +1,1 @@
+export default function Terms(){return <main className="container-nx max-w-3xl pt-40 pb-24"><h1 className="font-display text-7xl">Terms & Conditions</h1><p className="mt-8 leading-8 text-black/60">Placeholder terms for the website. Add the company’s final terms, service conditions, quotation terms and project policies before production launch.</p></main>}

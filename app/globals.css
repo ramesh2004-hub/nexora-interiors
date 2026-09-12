@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --cream:#f7f4ee; --ink:#201c18; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--cream); color:var(--ink); }
+::selection { background:#cdbda8; color:#201c18; }
+.container-nx { width:min(1180px, calc(100% - 40px)); margin-inline:auto; }
+.display { letter-spacing:-0.045em; line-height:.95; }
+.grid-lines { background-image:linear-gradient(to right, rgba(32,28,24,.055) 1px, transparent 1px); background-size:25% 100%; }
+.hero-noise { position:relative; }
+.hero-noise:after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.06; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); }
+.fade-mask { mask-image:linear-gradient(to bottom, black 78%, transparent 100%); }
+input, select, textarea { outline:none; }
